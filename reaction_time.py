@@ -61,7 +61,7 @@ if st.session_state.trial_count >= 5:
     ax.set_title("반응 속도 추이")
     graph_area.pyplot(fig)
 
-    if st.button("🔄 다시 시작하기"):
+    if st.button("다시 시작하기"):
         for key in st.session_state.keys():
             del st.session_state[key]
         st.rerun()
