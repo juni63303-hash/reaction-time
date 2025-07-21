@@ -18,7 +18,7 @@ for key, default in {
     if key not in st.session_state:
         st.session_state[key] = default
 
-st.title("🎯 반응 속도 테스트 (5회)")
+st.title("반응 속도 테스트")
 
 def start_trial():
     st.session_state.state = "waiting"
