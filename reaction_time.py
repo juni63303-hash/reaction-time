@@ -16,7 +16,7 @@ for key, default in {
     "change_time": 0,
 }.items():
     if key not in st.session_state:
-        st.session_state[key] = default
+        st.session_state[key] = default 
 
 st.title("반응 속도 테스트")
 
