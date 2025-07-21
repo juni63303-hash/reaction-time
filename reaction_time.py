@@ -51,8 +51,8 @@ else:
 
 if st.session_state.trial_count >= 5:
     avg_time = sum(st.session_state.reaction_times) / len(st.session_state.reaction_times)
-    st.subheader("📊 최종 반응 속도 결과")
-    st.write(f"✅ 평균 반응 속도: **{int(avg_time)}ms**")
+    st.subheader("최종 반응 속도 결과")
+    st.write(f"평균 반응 속도: **{int(avg_time)}ms**")
 
     fig, ax = plt.subplots()
     ax.plot(range(1, 6), st.session_state.reaction_times, marker='o')
@@ -70,7 +70,7 @@ else:
     graph_area.empty()
 
     if st.session_state.state == "idle":
-        if st.button("🧪 테스트 시작"):
+        if st.button("테스트 시작"):
             start_trial()
     else:
         if st.session_state.state == "waiting":
