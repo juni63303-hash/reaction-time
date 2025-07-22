@@ -1,4 +1,5 @@
 pip install streamlit-autorefresh
+pip install matplotlib
 
 cd %USERPROFILE%\Desktop
 dir
